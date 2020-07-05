@@ -2,8 +2,9 @@ from flask import render_template
 from flask import Flask ,request
 import os
 import tensorflow as tf
-import cv2
 import numpy as np
+import skimage.io as sk
+from skimage.transform import rescale, resize
 import efficientnet.tfkeras
 
 MODEL_DIR = "models"
@@ -46,8 +47,11 @@ def upload_file():
 
 def predict(image_path, dimensions):
     final_pred = 0
-    img = cv2.imread(image_path)
-    img = cv2.resize(img, dimensions)
+    # img = cv2.imread(image_path)
+    # img = cv2.resize(img, dimensions)
+
+    img = sk.imread(image_path, True)
+    img = resize(img, dimensions)
     img = np.expand_dims(img, axis=0)
     print(img.shape)
     img = tf.cast(img, tf.float32)
