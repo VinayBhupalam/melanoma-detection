@@ -51,8 +51,9 @@ def predict(image_path, dimensions):
     # img = cv2.resize(img, dimensions)
 
     img = sk.imread(image_path, True)
-    img = resize(img, dimensions)
+    img = resize(img, (*dimensions, 3))
     img = np.expand_dims(img, axis=0)
+    print("Shape of the image is")
     print(img.shape)
     img = tf.cast(img, tf.float32)
     MODEL = tf.keras.models.load_model('MODEL.h5')
