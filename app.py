@@ -30,7 +30,7 @@ DIMENSIONS = (224, 224)
 #
 # model.save("MODEL.h5")
 
-MODEL = tf.keras.models.load_model('MODEL.h5')
+
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -55,6 +55,7 @@ def predict(image_path, dimensions):
     img = np.expand_dims(img, axis=0)
     print(img.shape)
     img = tf.cast(img, tf.float32)
+    MODEL = tf.keras.models.load_model('MODEL.h5')
     # model = get_model(dimensions)
     files = os.listdir(MODEL_DIR)
     num_models = len(files)
