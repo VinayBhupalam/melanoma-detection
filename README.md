@@ -36,10 +36,9 @@ EfficientNetB4 pre trained model is used, Please refer the research paper for th
 
 Images are augmented with respect to zoom,shear,rotate left/right flip up/down during training randomly.
 
-Significant Class imbalance problem was seen as expected in medical images. Number of positive data points were 584 compared to 30,264 Negative data points
-Training data is under sampled i.e on EDA of the meta deta it was seen that for the same part of the body, for the same patient multiple images were found.These images were
-of different sizes or taken from a different angle,natural augmentation!!!!. But since we do augmentation during training, i felt there is no harm in not using these duplicate
-images and i was right as well [Checked the performance of the model with all the available data as well, there was almost no difference].
+A significant Class imbalance problem was seen as expected in medical images. Number of positive data points were 584 compared to 30,264 Negative data points
+Training data is under-sampled i.e on EDA of the metadata it was seen that for the same part of the body, for the same patient multiple images were found. These images were
+of different sizes or taken from a different angle, natural augmentation!!!!. But since we do augmentation during training, we can remove these duplicate images [Checked the performance of the model with all the available data as well, there was almost no difference].
 
 Loss functions experimented are Binary crossentropy, weighted binary cross entropy, focal loss  -> weighted binary cross entropy gave better performance.
 
@@ -86,4 +85,4 @@ Dockerize the model
 
 
 
-## Credits
+
