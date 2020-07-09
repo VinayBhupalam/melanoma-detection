@@ -8,6 +8,7 @@
   * [Installation](#installation)
   * [Run](#run)
   * [Deployement on Heroku](#deployement-on-heroku)
+  * [To Do](#to-do)
 
 
 ## Demo
@@ -56,21 +57,24 @@ The Code is written in Python 3.7. If you don't have Python installed you can fi
 ```bash
 pip install -r requirements.txt
 ```
-
 ## Run
-
-#### Windows User
-
-
+python app.py
 
 ## Deployement on Heroku
-
+Free Heroku account has been created and the model has been deployed.
 
 
 
 ## To Do
+Create an ensemble of models using various architectures/image sizes and meta deta
+Dockerize the model
 
 
+
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+[<img target="_blank" src="https://www.tensorflow.org/images/tf_logo_social.png" width=200>](https://tensorflow.org/) [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) 
 
 
 
