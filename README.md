@@ -20,7 +20,7 @@ This project is aimed to classifiy an image as malignant or benign and thereby d
 
 ## Dataset and preprocessing
 ISIC 2019 Dataset for benign and malignant cases available in Kaggle
-JPEG images are converted to TFRecord format for faster processing and used tensor flow dataset class to load the data in batches.
+JPEG format are converted to TFRecord format for faster processing and used tensor flow dataset class to load the data in batches.
 TFRecord files created are uploaded back to kaggle and hence into GCS Cloud.
 TFRecord files are created for various sizes of images - 224x224 60% center cropped, 384x384 50% center cropped.
 
@@ -66,6 +66,7 @@ Free Heroku account has been created and the model has been deployed.
 
 ## To Do
 Create an ensemble of models using various architectures/image sizes and meta deta
+
 Dockerize the model
 
 
