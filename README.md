@@ -32,7 +32,7 @@ Tensorflow deep learning frame work is used.
 
 Model trained on Kaggle TPU
 
-EfficientNetB4 pre trained model is used, Please refer the research paper for the architecture of EfficientNet -
+EfficientNetB4 pre trained model is used, Please refer the research paper for the architecture of EfficientNet - https://arxiv.org/abs/1905.11946
 
 Images are augmented with respect to zoom,shear,rotate left/right flip up/down during training randomly.
 
