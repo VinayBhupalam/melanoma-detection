@@ -2,7 +2,7 @@ scikit-image==0.17.2
 Flask==1.1.1
 gunicorn==19.9.0
 Jinja2==2.10.1
-numpy==1.18.2
+numpy==1.22.0
 opencv-python==4.2.0.34
 efficientnet==1.1.0
 tensorflow==2.0.0
